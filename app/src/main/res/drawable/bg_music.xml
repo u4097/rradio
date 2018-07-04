@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:end="@dimen/size_half_check"
+          android:right="@dimen/size_half_check"
+          android:top="@dimen/size_half_check">
+        <shape android:shape="rectangle">
+
+            <gradient android:angle="-45"
+                      android:endColor="#335093ff"
+                      android:startColor="#3300eeff"
+                      android:type="linear"/>
+
+            <corners android:radius="6dip"/>
+        </shape>
+    </item>
+
+
+</layer-list>

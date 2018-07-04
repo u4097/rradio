@@ -1,0 +1,42 @@
+{
+  "id": "3949d651-fd5a-4b6c-9d5c-e1ca39e0b397",
+  "name": "Мисс РР Финал",
+  "date": "2017-08-31 16:53",
+
+  "logo": {
+    "url": "https://rusradio.ru/uplouds/blabla.svg",
+    "url_relative": "/uplouds/blabla.svg"
+  },
+
+  "picture": {
+    "url": "https://rusradio.ru/uplouds/blabla.svg",
+    "url_relative": "/uplouds/blabla.svg"
+  },
+
+  "items": [
+    {
+      "id": "3949d651-fd5a-4b6c-9d5c-e1ca39e0b398",
+      "id_poll": "3949d651-fd5a-4b6c-9d5c-e1ca39e0b397",
+      "number": 7,
+      "title": "Апишкина Апишка",
+      "subtitle": "Зубуржуйск",
+      "description": "Какое то описание",
+      "votes": 245,
+      "position": 1,
+      "dynamics": "-1",
+      "is_voted": true
+    },
+    {
+      "id": "3949d651-fd5a-4b6c-9d5c-e1ca39e0b399",
+      "id_poll": "3949d651-fd5a-4b6c-9d5c-e1ca39e0b397",
+      "number": 7,
+      "title": "Апишкина Апишка",
+      "subtitle": "Зубуржуйск",
+      "description": "Какое то описание",
+      "votes": 245,
+      "position": 5,
+      "dynamics": "+10",
+      "is_voted": false
+    }
+  ]
+}

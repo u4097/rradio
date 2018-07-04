@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+    <TextView
+        android:id="@+id/tvAlarmTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="@string/label_alarm"
+        android:textSize="@dimen/text_size_medium"
+        android:textStyle="bold"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+    />
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/swAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvAlarmTitle"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tvAlarmTitle"
+        android:padding="10dp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/tvAlarmTitle"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvAlarmTitle"
+    />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vertical_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        app:layout_constraintGuide_percent="0.5"
+    />
+
+    <ru.russianmediagroup.rusrad.ui.custom.pickerview.LoopView
+        android:id="@+id/pickerHours"
+        android:layout_width="80dp"
+        android:layout_height="@dimen/height_loop"
+        android:layout_below="@+id/swAlarm"
+        android:layout_margin="@dimen/spacing_medium"
+
+        app:canLoop="true"
+        app:centerTextColor="?colorAccent"
+        app:drawItemCount="7"
+        app:initPosition="3"
+
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/vertical_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/tvAlarmTitle"
+
+        app:lineColor="@color/colorPrimary"
+        app:textSize="@dimen/text_size_loop"
+        app:topBottomTextColor="@color/grey"/>
+
+    <ru.russianmediagroup.rusrad.ui.custom.pickerview.LoopView
+        android:id="@+id/pickerMinutes"
+        android:layout_width="80dp"
+        android:layout_height="@dimen/height_loop"
+        android:layout_below="@+id/swAlarm"
+        android:layout_margin="@dimen/spacing_medium"
+
+        app:canLoop="true"
+        app:centerTextColor="?colorAccent"
+        app:drawItemCount="7"
+        app:initPosition="3"
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/vertical_guideline"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAlarmTitle"
+
+        app:lineColor="@color/transparent"
+        app:textSize="@dimen/text_size_loop"
+        app:topBottomTextColor="@color/grey"/>
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height_time_selector"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_selector"
+
+        app:layout_constraintBottom_toBottomOf="@+id/pickerMinutes"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pickerMinutes"
+    />
+
+
+    <TextView
+        android:id="@+id/tvRepeatLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_medium"
+        android:layout_marginStart="@dimen/spacing_medium"
+        android:padding="@dimen/spacing_medium"
+        android:text="@string/label_repeat"
+        android:textSize="@dimen/text_size_medium"
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pickerMinutes"
+    />
+
+    <ru.russianmediagroup.rusrad.ui.custom.WeekDayView
+        android:id="@+id/vMonday"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height_week_day"
+        android:layout_margin="@dimen/spacing_medium"
+        android:layout_weight="1"
+        app:layout_constraintHorizontal_bias="0.0"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/vTuesday"
+
+        app:layout_constraintTop_toBottomOf="@+id/tvRepeatLabel"
+        app:wdv_day_number="monday"
+    />
+
+    <ru.russianmediagroup.rusrad.ui.custom.WeekDayView
+        android:id="@+id/vTuesday"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height_week_day"
+        android:layout_margin="@dimen/spacing_medium"
+        android:layout_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/vMonday"
+        app:layout_constraintRight_toLeftOf="@+id/vWednesday"
+
+        app:layout_constraintTop_toBottomOf="@+id/tvRepeatLabel"
+        app:wdv_day_number="tuesday"
+    />
+
+    <ru.russianmediagroup.rusrad.ui.custom.WeekDayView
+        android:id="@+id/vWednesday"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height_week_day"
+        android:layout_margin="@dimen/spacing_medium"
+        android:layout_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/vTuesday"
+        app:layout_constraintRight_toLeftOf="@+id/vThursday"
+
+        app:layout_constraintTop_toBottomOf="@+id/tvRepeatLabel"
+        app:wdv_day_number="wednesday"
+    />
+    <ru.russianmediagroup.rusrad.ui.custom.WeekDayView
+        android:id="@+id/vThursday"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height_week_day"
+        android:layout_margin="@dimen/spacing_medium"
+        android:layout_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/vWednesday"
+        app:layout_constraintRight_toLeftOf="@+id/vFriday"
+        app:layout_constraintTop_toBottomOf="@+id/tvRepeatLabel"
+
+        app:wdv_day_number="thursday"
+        tools:layout_editor_absoluteX="@dimen/spacing_medium"
+    />
+    <ru.russianmediagroup.rusrad.ui.custom.WeekDayView
+        android:id="@+id/vFriday"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height_week_day"
+        android:layout_margin="@dimen/spacing_medium"
+        android:layout_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/vThursday"
+        app:layout_constraintRight_toLeftOf="@+id/vSaturday"
+
+        app:layout_constraintTop_toBottomOf="@+id/tvRepeatLabel"
+        app:wdv_day_number="friday"
+    />
+    <ru.russianmediagroup.rusrad.ui.custom.WeekDayView
+        android:id="@+id/vSaturday"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height_week_day"
+        android:layout_margin="@dimen/spacing_medium"
+        android:layout_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/vFriday"
+        app:layout_constraintRight_toLeftOf="@+id/vSunday"
+
+        app:layout_constraintTop_toBottomOf="@+id/tvRepeatLabel"
+        app:wdv_day_number="saturday"
+    />
+
+    <ru.russianmediagroup.rusrad.ui.custom.WeekDayView
+        android:id="@+id/vSunday"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height_week_day"
+        android:layout_margin="@dimen/spacing_medium"
+        android:layout_weight="1"
+
+        app:layout_constraintLeft_toRightOf="@+id/vSaturday"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRepeatLabel"
+        app:wdv_day_number="sunday"
+
+        tools:layout_editor_absoluteX="@dimen/spacing_medium"
+    />
+
+    <TextView
+        android:id="@+id/tvWakeWith"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_medium"
+        android:layout_marginStart="@dimen/spacing_medium"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:padding="@dimen/spacing_medium"
+        android:text="@string/label_wake_with_music"
+        android:textSize="@dimen/text_size_medium"
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vMonday"
+    />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvMusic"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvWakeWith"
+        android:clipToPadding="false"
+        android:padding="@dimen/spacing_medium"
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWakeWith"
+    />
+
+</android.support.constraint.ConstraintLayout>

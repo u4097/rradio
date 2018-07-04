@@ -1,0 +1,70 @@
+{
+  "project_info": {
+    "project_number": "178973844830",
+    "firebase_url": "https://rusradio-5f14d.firebaseio.com",
+    "project_id": "rusradio-5f14d",
+    "storage_bucket": "rusradio-5f14d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:178973844830:android:c50de9fc71f494c5",
+        "android_client_info": {
+          "package_name": "ru.russianmediagroup.rusrad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "178973844830-k8nfi38765etbd21mce2afv30khcmg3d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ru.russianmediagroup.rusrad",
+            "certificate_hash": "226536ec74772539135750d194ca4260bb419cd4"
+          }
+        },
+        {
+          "client_id": "178973844830-r0fm65mud67qj8e2qlqqi2o1k64q6gps.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ru.russianmediagroup.rusrad",
+            "certificate_hash": "a61c1ae1291dc5f7fa574507b32bf738c5c7bf34"
+          }
+        },
+        {
+          "client_id": "178973844830-m9mrpcsq95lnhtmmr8gp3bqooufq7f0o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCw0818DGmwQEhg2sxOMK_RiXp3VEfQTrw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "178973844830-m9mrpcsq95lnhtmmr8gp3bqooufq7f0o.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "178973844830-qsa2m59b44nd5de2bk5mrs3jple4ogis.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.revelmob.rmg.rusradio"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

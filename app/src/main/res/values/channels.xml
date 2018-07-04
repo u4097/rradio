@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- IMPORTANT! All arrays MUST contain the same number of elements -->
+
+    <integer-array name="channel_go_network">
+        <item>1</item>
+        <item>0</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+    </integer-array>
+
+    <string-array name="channel_labels">
+        <item>Русское Радио</item>
+        <item>Русское Кино</item>
+        <item>Золотой Граммофон</item>
+        <item>Русский рок</item>
+        <item>Высоцкий</item>
+        <item>Детский канал</item>
+        <item>Бессмертный полк</item>
+        <item>Соня</item>
+    </string-array>
+
+    <string-array name="channel_jingle_labels">
+        <item>Русское Радио</item>
+        <item>Радио Русское Кино</item>
+        <item>Радио Золотой Граммофон</item>
+        <item>Радио Русский рок</item>
+        <item>Радио Высоцкий</item>
+        <item>Детский канал</item>
+        <item>Бессмертный полк</item>
+        <item>Радио Соня</item>
+    </string-array>
+
+    <string-array name="channel_media_streams">
+        <item>http://icecast.russkoeradio.cdnvideo.ru:8000/rr_m.aac</item>
+        <item>http://icecast.russkoeradio.cdnvideo.ru/st19.mp3</item>
+        <item>http://icecast.russkoeradio.cdnvideo.ru/st31.mp3</item>
+        <item>http://icecast.russkoeradio.cdnvideo.ru/st37.mp3</item>
+        <item>http://icecast.russkoeradio.cdnvideo.ru/st27.mp3</item>
+        <item>http://icecast.russkoeradio.cdnvideo.ru/st28.mp3</item>
+        <item>http://icecast.russkoeradio.cdnvideo.ru/st10.mp3</item>
+        <item>http://rmgradio.gcdn.co/station-ru/st30.mp3/icecast.audio</item>
+    </string-array>
+
+    <string-array name="channel_data_streams">
+        <item>http://playlist.rr.ru/cur_playing/mc/cur_playing.json</item>
+        <item>http://playlist.rr.ru/cur_playing/station/ST19.json</item>
+        <item>http://playlist.rr.ru/cur_playing/station/ST31.json</item>
+        <item>http://playlist.rr.ru/cur_playing/station/ST37.json</item>
+        <item>http://playlist.rr.ru/cur_playing/station/ST27.json</item>
+        <item>http://playlist.rr.ru/cur_playing/station/st28.json</item>
+        <item>http://playlist.rr.ru/cur_playing/station/st10.json</item>
+        <item>http://playlist.rr.ru/cur_playing/station/sonya.json</item>
+    </string-array>
+
+    <integer-array name="channel_cover_placeholders">
+        <item>@drawable/channel_rr</item>
+        <item>@drawable/channel_kino</item>
+        <item>@drawable/channel_gg</item>
+        <item>@drawable/channel_rok</item>
+        <item>@drawable/channel_rvisocky</item>
+        <item>@drawable/channel_detsky</item>
+        <item>@drawable/channel_polk</item>
+        <item>@drawable/channel_sonya</item>
+    </integer-array>
+
+    <string-array name="channel_programs">
+        <item>add441ad-4aaf-440f-9231-53a08eedd2eb</item>
+        <item>f18f24dc-c75e-4a29-9744-1eaf7c2bb055</item>
+        <item>e677eeb8-b226-44f7-b252-ca7032af3dba</item>
+        <item>a79bd101-9be1-44cc-bd8c-732aab257381</item>
+        <item>3da41cd5-b932-4e2f-b350-ac8ffc534a3a</item>
+        <item>d936b97d-1626-4b3b-b4b4-1faae1baff55</item>
+        <item>4f7075f5-55a8-4f74-be9b-e0d8b3619ce8</item>
+        <item>4a5d17f0-fa6f-4453-bd0d-d13601ca26f4</item>
+    </string-array>
+
+</resources>

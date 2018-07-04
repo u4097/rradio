@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <!-- Theme Colors -->
+  <color name="primary">#FFFFFF</color>
+  <color name="primary_dark">#EE455A</color>
+  <color name="primary_dark50">#66EE455A</color>
+  <color name="accent">#EE455A</color>
+  <color name="accent50">#66EE455A</color>
+
+  <!-- Dimens -->
+
+  <!-- Pager -->
+  <dimen name="view_pager_margin">10dp</dimen>
+  <dimen name="view_pager_page_margin">-20dp</dimen>
+
+  <!--Cover-->
+  <dimen name="size_cover">240dp</dimen>
+
+  <!-- Tabs -->
+  <dimen name="tabs_height">30dp</dimen>
+  <dimen name="tabs_padding">40dp</dimen>
+  <color name="tabs_text_color">@color/black</color>
+  <color name="tabs_selected_text_color">@color/black</color>
+  <dimen name="tabs_width_min">400dp</dimen>
+  <color name="tabs_selected_indicator_color">#00000000</color>
+  <dimen name="tabs_selected_indicator_height">0dp</dimen>
+  <dimen name="tabs_divider_height">0dp</dimen>
+  <color name="tabs_divider_color">#00000000</color>
+
+  <!-- Relays -->
+  <bool name="pager_show_scale">true</bool>
+  <bool name="drawer_enabled">true</bool>
+  <bool name="timeline_enabled">false</bool>
+
+</resources>

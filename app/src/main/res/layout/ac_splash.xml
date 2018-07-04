@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splashRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash">
+
+    <ImageView
+        android:id="@+id/imgSplashBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/guidepoint"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:src="@drawable/logo_group" />
+
+    <View
+        android:id="@+id/guidepoint"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/tvSplashTitle"
+        fontPath="fonts/proxima_nova_thin.otf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/guidepoint"
+        android:layout_margin="30dp"
+        android:gravity="center"
+        android:text="@string/label_tagline"
+        android:textSize="30sp"
+        tools:ignore="MissingPrefix" />
+
+    <RelativeLayout
+        android:id="@+id/acSplashLError"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_white"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/acSplashTvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/label_error_loading"
+            android:textSize="@dimen/text_size_large" />
+
+        <Button
+            android:id="@+id/acSplashBtnRepeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/acSplashTvTitle"
+            android:layout_alignRight="@+id/acSplashTvTitle"
+            android:layout_below="@+id/acSplashTvTitle"
+            android:layout_margin="@dimen/spacing_medium"
+            android:text="@string/label_reload" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

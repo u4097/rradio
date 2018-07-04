@@ -1,0 +1,3 @@
+[submodule "rmgcore"]
+	path = rmgcore
+	url = ./rmgcore

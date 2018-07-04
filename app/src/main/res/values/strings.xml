@@ -1,0 +1,49 @@
+<resources>
+  <string name="app_name">Русское Радио</string>
+
+  <string name="label_radio_station">Радиостанция</string>
+  <string name="label_rate_app">Оценить приложение</string>
+  <string name="label_feedback">Связь с разработчиком</string>
+
+
+  <string name="label_you_are_listen">Вы слушаете</string>
+  <string name="label_radio">Радио</string>
+  <string name="label_wakeuper">Будильник</string>
+  <string name="label_perks">Акции</string>
+  <string name="label_alarm">Будильник</string>
+  <string name="label_repeat">Повторять</string>
+  <string name="format_digits_2">%02d</string>
+  <string name="label_wake_with_music">Проснуться с музыкой</string>
+  <string name="error_cannot_like">Вы не можете оценить эту мелодию</string>
+  <string name="label_contests">Акции</string>
+  <string name="url_contest">http://rusradio.ru/contest/10067520</string>
+  <string name="label_tagline">КРУПНЕЙШАЯ\nРАДИОСЕТЬ\nВ МИРЕ</string>
+  <string name="label_summer_on_million">«Русское Радио» дарит лето на миллион!</string>
+  <string name="label_summer_text">Все лето, с 1 июня по 31 августа, «Русское Радио» проводит
+        большую игру — «Лето на МИЛЛИОН!».
+    </string>
+  <string name="label_details">Подробности</string>
+  <string name="label_paused">Приостановлено</string>
+  <string name="label_loading">Загрузка&#8230;</string>
+  <string name="label_error_loading">Ошибка соединения</string>
+  <string name="label_privacy">Политика конфиденциальности</string>
+  <string name="link_privacy">http://apps.rusradio.ru/policy.html</string>
+  <string name="email_support">rmgsupport@gmail.com</string>
+  <string name="play_address_f">market://details?id=%1$s</string>
+    <string name="label_connection_error">Ошибка подключения</string>
+  <string name="label_retry">Повторить</string>
+    <string name="label_watch">Смотреть</string>
+    <string name="label_translation_is_not_yet">Трансляция пока не ведётся</string>
+    <string name="label_close">Выйти</string>
+    <string name="label_now">Сейчас в эфире</string>
+    <string name="label_now_is_translation">Смотрите трансляцию из студии</string>
+    <string name="label_more">Ещё</string>
+
+    <string name="label_final_by_date_f">Финал за %1$s</string>
+    <string name="label_poll">Конкурс</string>
+    <string name="label_poll_final">Финал Голосования</string>
+  <string name="label_number_f">№ %1$d</string>
+    <string name="send_to">Поделиться через</string>
+    <string name="label_reload">Повторить</string>
+
+</resources>

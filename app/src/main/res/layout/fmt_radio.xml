@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+>
+
+    <rmg.droid.rmgcore.ui.custom.CenteringTabLayout
+        android:id="@+id/tabLayout"
+        fontPath="fonts/proxima_nova_semibold.otf"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabGravity="center"
+        app:tabIndicatorColor="@color/tabs_selected_indicator_color"
+        app:tabIndicatorHeight="@dimen/tabs_selected_indicator_height"
+        app:tabMinWidth="@dimen/tabs_width_min"
+        app:tabMode="scrollable"
+        app:tabPaddingEnd="@dimen/tabs_padding"
+        app:tabPaddingStart="@dimen/tabs_padding"
+        app:tabSelectedTextColor="@color/tabs_selected_text_color"
+        app:tabTextAppearance="@style/MonteCarlo.TextAppearance.Tab"
+        app:tabTextColor="@color/tabs_text_color"
+
+    />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.58"
+    />
+
+    <rmg.droid.rmgcore.ui.custom.pager.EnchantedViewPager
+        android:id="@+id/pagerStations"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout"
+        app:layout_constraintVertical_bias="1.0"
+    />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_medium"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        tools:text="Заголовок песни"
+    />
+
+    <TextView
+        android:id="@+id/tvArtist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/text_size_small"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        tools:text="Исполнитель"
+    />
+
+    <ImageView
+        android:id="@+id/btnLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:scaleType="center"
+        android:src="@drawable/btn_like"
+
+        app:layout_constraintBottom_toTopOf="@+id/seekVolume"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintLeft_toRightOf="@+id/btnPlayStop"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvArtist"
+        app:layout_constraintVertical_bias="0.5"
+    />
+
+
+    <ImageView
+        android:id="@+id/btnDislike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:scaleType="center"
+        android:src="@drawable/btn_dislike"
+
+        app:layout_constraintBottom_toTopOf="@+id/seekVolume"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btnPlayStop"
+        app:layout_constraintTop_toBottomOf="@+id/tvArtist"
+        app:layout_constraintVertical_bias="0.5"
+    />
+
+
+    <ImageView
+        android:id="@+id/btnPlayStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_play_ui"
+        app:layout_constraintBottom_toTopOf="@+id/seekVolume"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvArtist"
+    />
+
+    <ImageView
+        android:id="@+id/ivVolumeIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/seekVolume"
+        app:layout_constraintLeft_toLeftOf="@+id/btnDislike"
+        app:layout_constraintTop_toTopOf="@+id/seekVolume"
+        app:srcCompat="@drawable/ic_volume"
+    />
+
+    <SeekBar
+        android:id="@+id/seekVolume"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="4dp"
+        android:foregroundGravity="center"
+        android:maxHeight="20dp"
+        android:minHeight="20dp"
+        android:progress="100"
+        android:thumb="@drawable/ic_thumb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/ivVolumeIcon"
+        app:layout_constraintRight_toRightOf="@+id/btnLike"
+    />
+
+</android.support.constraint.ConstraintLayout>

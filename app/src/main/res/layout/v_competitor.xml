@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/vCompetitorCardView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/spacing_medium"
+
+    card_view:cardBackgroundColor="@android:color/black"
+    card_view:cardCornerRadius="8dp"
+    card_view:cardElevation="@dimen/card_elevation">
+
+    <ImageView
+        android:id="@+id/vCompetitorIvPicture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:scaleType="centerCrop"
+
+        tools:src="@tools:sample/backgrounds/scenic" />
+
+    <View
+        android:id="@+id/vCompetitorVOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_gradient_bottom"
+        android:visibility="visible" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/vCompetitorConstraintRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/vCompetitorBtnPrev"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="?selectableItemBackground"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/vCompetitorBtnInfo"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/vCompetitorBtnInfo"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="?selectableItemBackground"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/vCompetitorBtnNext"
+            app:layout_constraintHorizontal_bias="0.3"
+            app:layout_constraintStart_toEndOf="@+id/vCompetitorBtnPrev"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/vCompetitorBtnNext"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="?selectableItemBackground"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toEndOf="@+id/vCompetitorBtnInfo"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/vCompetitorIndicatorBtnShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_medium"
+            android:background="?selectableItemBackground"
+            android:padding="@dimen/spacing_medium"
+            app:srcCompat="@drawable/ic_share"
+
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/vCompetitorIndicatorLInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintBottom_toTopOf="@+id/vCompetitorIndicator"
+            app:layout_constraintLeft_toLeftOf="@+id/vCompetitorIndicator"
+            app:layout_constraintRight_toRightOf="@+id/vCompetitorIndicator">
+
+            <TextView
+                android:id="@+id/vCompetitorTvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/spacing_xlarge"
+                android:layout_marginLeft="@dimen/spacing_small"
+                android:layout_marginRight="@dimen/spacing_xlarge"
+                android:layout_marginStart="@dimen/spacing_small"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_large"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toBottomOf="@+id/vCompetitorTvNumber"
+                app:layout_constraintLeft_toRightOf="@+id/vCompetitorTvNumber"
+                app:layout_constraintTop_toTopOf="@+id/vCompetitorTvNumber"
+
+                tools:text="@tools:sample/last_names" />
+
+            <TextView
+                android:id="@+id/vCompetitorTvNumber"
+                fontPath="fonts/proxima_nova_semibold.otf"
+                android:layout_width="@dimen/size_icon_huge"
+                android:layout_height="@dimen/size_icon_huge"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:layout_marginLeft="@dimen/spacing_small"
+                android:layout_marginStart="@dimen/spacing_small"
+                android:background="@drawable/ic_circle_shadowed"
+                android:gravity="center"
+                android:textColor="@color/accent"
+                android:textSize="@dimen/text_size_large"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@+id/vCompetitorTvSubtitle"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/vCompetitorBtnLike"
+
+                tools:ignore="MissingPrefix,RtlHardcoded"
+                tools:text="3" />
+
+            <TextView
+                android:id="@+id/vCompetitorTvSubtitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_large"
+                android:layout_marginLeft="@dimen/spacing_xlarge"
+                android:layout_marginRight="@dimen/spacing_xlarge"
+                android:gravity="center_vertical"
+                android:textColor="@color/grey"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/vCompetitorBtnLike"
+
+                tools:text="@tools:sample/lorem" />
+
+            <com.like.LikeButton
+                android:id="@+id/vCompetitorBtnLike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/spacing_medium"
+                android:layout_marginRight="@dimen/spacing_medium"
+
+                app:anim_scale_factor="2"
+                app:circle_end_color="@color/colorAccent"
+                app:circle_start_color="@color/colorPrimary"
+                app:dots_primary_color="@color/colorAccent"
+                app:dots_secondary_color="@color/colorPrimary"
+                app:icon_size="22dp"
+                app:icon_type="heart"
+                app:is_enabled="true"
+                app:layout_constraintBottom_toTopOf="@+id/vCompetitorTvLikes"
+                app:layout_constraintRight_toRightOf="parent"
+                app:like_drawable="@drawable/ic_heart_accent"
+                app:unlike_drawable="@drawable/ic_heart_empty_accent"
+
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/vCompetitorTvLikes"
+                fontPath="fonts/proxima_nova_semibold.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_large"
+                android:layout_marginLeft="@dimen/spacing_large"
+                android:layout_marginRight="@dimen/spacing_large"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toBottomOf="@+id/vCompetitorTvSubtitle"
+                app:layout_constraintLeft_toLeftOf="@+id/vCompetitorBtnLike"
+                app:layout_constraintRight_toRightOf="@+id/vCompetitorBtnLike"
+
+                tools:ignore="MissingPrefix"
+                tools:text="357" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/vCompetitorTvDescription"
+            fontPath="fonts/proxima_nova_regular.otf"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/spacing_xlarge"
+            android:layout_marginRight="@dimen/spacing_xlarge"
+
+            app:layout_constraintBottom_toTopOf="@+id/vCompetitorIndicator"
+            app:layout_constraintLeft_toLeftOf="@+id/vCompetitorIndicator"
+            app:layout_constraintRight_toRightOf="@+id/vCompetitorIndicator"
+            app:layout_constraintTop_toBottomOf="@+id/vCompetitorIndicatorLInfo"
+
+            tools:ignore="MissingPrefix"
+            tools:text="@tools:sample/lorem/random" />
+
+        <ru.russianmediagroup.rusrad.ui.custom.IndicatorView
+            android:id="@+id/vCompetitorIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginBottom="@dimen/spacing_medium"
+            android:layout_marginLeft="@dimen/spacing_small"
+            android:layout_marginRight="@dimen/spacing_small"
+
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintLeft_toLeftOf="parent"
+            card_view:layout_constraintRight_toRightOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

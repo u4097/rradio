@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/spacing_medium"
+    android:orientation="vertical"
+>
+
+    <FrameLayout
+        android:layout_width="@dimen/size_channel_alarm"
+        android:layout_height="@dimen/size_channel_alarm"
+    >
+
+        <ImageView
+            android:id="@+id/imgChannelCover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:paddingRight="@dimen/size_half_check"
+            android:paddingTop="@dimen/size_half_check"
+            android:scaleType="centerCrop"
+            android:src="@drawable/channel_rvisocky"
+        />
+
+        <View
+            android:id="@+id/vChannelOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_music_selectable"
+            android:clickable="true"
+        />
+
+        <ImageView
+            android:id="@+id/ivCheck"
+            android:layout_width="@dimen/size_check"
+            android:layout_height="@dimen/size_check"
+            android:layout_gravity="top|end"
+            app:srcCompat="@drawable/ic_check"
+        />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvChannelName"
+        android:layout_width="@dimen/size_channel_alarm"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:textColor="@color/color_selectable"
+        android:textSize="@dimen/text_size_tiny"
+
+        tools:text="Русское радиfs df sd fds fsdfsdо"
+    />
+
+</LinearLayout>

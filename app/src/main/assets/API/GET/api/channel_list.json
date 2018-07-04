@@ -1,0 +1,92 @@
+{
+  "page": 1,
+  "items": [
+    {
+      "logo_id": "079d7755-32c3-4dce-8443-68d0d0327479",
+      "name": "Золотой Граммофон",
+      "is_live": null,
+      "stream_url": "http://icecast.russkoeradio.cdnvideo.ru/st31.mp3",
+      "api_url": "http://playlist.rr.ru/cur_playing/station/ST31.json",
+      "order": 3,
+      "logo_path": "/uploads/c8/15/aebe030bee7ce5452fc5463f4189.svg",
+      "is_new": null,
+      "id": "e677eeb8-b226-44f7-b252-ca7032af3dba",
+      "dummy_id": null
+    },
+    {
+      "logo_id": "927c60cd-069c-4269-872a-a0b98235c56e",
+      "name": "Русский Рок",
+      "is_live": null,
+      "stream_url": "http://icecast.russkoeradio.cdnvideo.ru/st37.mp3",
+      "api_url": "http://playlist.rr.ru/cur_playing/station/ST37.json",
+      "order": 4,
+      "logo_path": "/uploads/25/d4/50f9707d00d1cf87714ef58bf611.svg",
+      "is_new": null,
+      "id": "a79bd101-9be1-44cc-bd8c-732aab257381",
+      "dummy_id": null
+    },
+    {
+      "logo_id": "d87d4aed-b148-49f5-84af-bbeeec4a1ffb",
+      "name": "Высоцкий",
+      "is_live": null,
+      "stream_url": "http://icecast.russkoeradio.cdnvideo.ru/st27.mp3",
+      "api_url": "http://playlist.rr.ru/cur_playing/station/ST27.json",
+      "order": 5,
+      "logo_path": "/uploads/44/0b/7fefebd0c107cd8fb9974610fbec.svg",
+      "is_new": null,
+      "id": "3da41cd5-b932-4e2f-b350-ac8ffc534a3a",
+      "dummy_id": null
+    },
+    {
+      "logo_id": "70b53c43-59da-4dca-bbf1-321bf746b7c5",
+      "name": "Бессмертный Полк",
+      "is_live": null,
+      "stream_url": "http://icecast.russkoeradio.cdnvideo.ru/st10.mp3",
+      "api_url": "http://playlist.rr.ru/cur_playing/station/ST10.json",
+      "order": 6,
+      "logo_path": "/uploads/b5/b2/5adbd4ddd4b6f163fe26939f94f5.svg",
+      "is_new": null,
+      "id": "4f7075f5-55a8-4f74-be9b-e0d8b3619ce8",
+      "dummy_id": null
+    },
+    {
+      "logo_id": "84ee3a05-7085-4057-a629-0351007d4073",
+      "name": "Детский Канал",
+      "is_live": null,
+      "stream_url": "http://icecast.russkoeradio.cdnvideo.ru/st28.mp3",
+      "api_url": "http://playlist.rr.ru/cur_playing/station/ST28.json",
+      "order": 7,
+      "logo_path": "/uploads/d7/ba/41fc72830cff981feecc9d7ec694.svg",
+      "is_new": null,
+      "id": "d936b97d-1626-4b3b-b4b4-1faae1baff55",
+      "dummy_id": null
+    },
+    {
+      "logo_id": "b03261a0-c600-4658-957f-235440ab511e",
+      "name": "Русское Радио !!!",
+      "is_live": true,
+      "stream_url": "http://icecast.russkoeradio.cdnvideo.ru:8000/rr_m.aac",
+      "api_url": null,
+      "order": 1,
+      "logo_path": "/uploads/71/6c/1daefeac69c265aa98b15cadd1c5.svg",
+      "is_new": null,
+      "id": "add441ad-4aaf-440f-9231-53a08eedd2eb",
+      "dummy_id": null
+    },
+    {
+      "logo_id": "6a1202f6-c60d-4758-8606-c44bf227d913",
+      "name": "Русское Кино",
+      "is_live": null,
+      "stream_url": "http://icecast.russkoeradio.cdnvideo.ru/st19.mp3",
+      "api_url": "http://playlist.rr.ru/cur_playing/station/ST19.json",
+      "order": 2,
+      "logo_path": "/uploads/fa/7a/89f3d7fbbadbaaeecd992b2183e5.svg",
+      "is_new": null,
+      "id": "f18f24dc-c75e-4a29-9744-1eaf7c2bb055",
+      "dummy_id": null
+    }
+  ],
+  "per_page": 20,
+  "pages": 1,
+  "total": 7
+}

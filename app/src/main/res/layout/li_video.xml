@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/li_video_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/spacing_medium">
+
+
+    <ImageView
+        android:id="@+id/li_video_iv_cover"
+        android:layout_width="150dp"
+        android:layout_height="100dp" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#22000000"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="@+id/li_video_iv_cover"
+        app:layout_constraintLeft_toLeftOf="@+id/li_video_iv_cover"
+        app:layout_constraintRight_toRightOf="@+id/li_video_iv_cover"
+        app:layout_constraintTop_toTopOf="@+id/li_video_iv_cover"
+        app:srcCompat="@drawable/ic_play_arrow" />
+
+    <TextView
+        android:id="@+id/li_video_tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:padding="@dimen/spacing_small"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/li_video_iv_cover"
+        app:layout_constraintTop_toTopOf="@+id/li_video_iv_cover"
+        tools:text="Вечернее шоу Аллы Довлатовой. Группа Градусы" />
+
+    <com.github.curioustechizen.ago.RelativeTimeTextView
+        android:id="@+id/li_video_tv_date"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:ellipsize="end"
+        android:lines="2"
+        android:padding="@dimen/spacing_small"
+        android:textSize="@dimen/text_size_tiny"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/li_video_iv_cover"
+        app:layout_constraintTop_toBottomOf="@+id/li_video_tv_title"
+        tools:text="неделю назад" />
+
+</android.support.constraint.ConstraintLayout>

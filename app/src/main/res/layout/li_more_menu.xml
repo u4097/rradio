@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/liMoreMenuRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/liMoreMenuTv"
+        fontPath="fonts/proxima_nova_semibold.otf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/spacing_medium"
+        android:layout_marginStart="@dimen/spacing_medium"
+        android:layout_toLeftOf="@+id/liMoreMenuIv"
+        android:layout_toStartOf="@+id/liMoreMenuIv"
+        android:padding="@dimen/spacing_medium"
+        android:textSize="@dimen/text_size_large"
+        android:textStyle="bold"
+        tools:ignore="MissingPrefix"
+        tools:text="Золотой Граммофон" />
+
+    <ImageView
+        android:id="@+id/liMoreMenuIv"
+        android:layout_width="@dimen/size_icon_huge"
+        android:layout_height="@dimen/size_icon_huge"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/spacing_medium"
+        tools:src="@tools:sample/avatars" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/liMoreMenuIv"
+        android:background="@color/grey" />
+
+</RelativeLayout>

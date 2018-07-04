@@ -1,0 +1,102 @@
+apply plugin: 'com.github.ben-manes.versions'
+buildscript {
+
+    ext {
+        /* Gradle Plugins */
+        fabricVersion = "1.25.4"
+        gradleVersionsVersion = '0.17.0'
+        dexcountVersion = "0.8.2"
+        ankoVersion = "0.10.5"
+
+        /* Kotlin Core */
+        kotlinVersion = '1.2.41'
+
+        /* Android Support and Services */
+        supportVersion = '27.1.1'
+        constraintVersion = '1.1.0'
+        playServicesVersion = '15.0.2'
+        playServicesAdsVersion = '15.0.1'
+        multidexVersion = '1.0.1'
+
+        /* Networking */
+        okHttpVersion = '3.10.0'
+        retrofitVersion = '2.4.0'
+
+        /* Media */
+        exoplayerVersion = '2.8.0'
+
+        /* UI */
+        glideVersion = '3.7.0'
+        transitionseverywhereVersion = '1.7.9'
+        pickviewVersion = '1.2.3'
+        calligraphyVersion = '2.3.0'
+        pageindicatorviewVersion = '1.0.1'
+        likeButtonVersion = '0.2.3'
+        moxyVersion = '1.5.3'
+
+
+        /* Di */
+        daggerVersion = '2.13'
+
+        /* Others */
+        rxPermissionsVersion = '0.9.5'
+        crashliticsVersion = '2.9.4@aar'
+        eventBusVersion = '3.0.0'
+        gsonVersion = '2.8.4'
+
+        /* Rx */
+        rxJavaVersion = '2.1.13'
+        rxAndroidVersion = '2.0.2'
+    }
+
+    repositories {
+        jcenter()
+        google()
+        maven { url "https://plugins.gradle.org/m2/" }
+        maven { url 'https://maven.fabric.io/public' }
+        maven { url 'https://jitpack.io' }
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.2'
+        classpath 'com.google.gms:google-services:3.2.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+        classpath "com.github.ben-manes:gradle-versions-plugin:$gradleVersionsVersion"
+        classpath "io.fabric.tools:gradle:$fabricVersion"
+        classpath "com.getkeepsafe.dexcount:dexcount-gradle-plugin:$dexcountVersion"
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        google()
+        maven { url 'https://maven.fabric.io/public' }
+        maven { url "https://jitpack.io" }
+        maven { url 'https://maven.google.com/' }
+        flatDir { dirs 'libs' }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+dependencyUpdates.resolutionStrategy = {
+    componentSelection { rules ->
+        rules.all { ComponentSelection selection ->
+            boolean rejected = ['alpha', 'beta', 'rc', 'cr', 'm'].any { qualifier ->
+                selection.candidate.version ==~ /(?i).*[.-]${qualifier}[.\d-]*/
+            }
+
+            boolean wrongLib = ['com.google.gms:google-services:3.3.1',
+                                'com.google.gms:google-services:3.3.0'].any { qualifier ->
+                selection.candidate.displayName == qualifier
+            }
+
+            if (rejected || wrongLib) {
+                selection.reject('Release candidate')
+            }
+        }
+    }
+}
