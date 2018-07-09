@@ -65,7 +65,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvAlarmTitle"
 
         app:lineColor="@color/colorPrimary"
-        app:textSize="@dimen/text_size_loop"
+        app:textSize="@dimen/text_size_medium"
         app:topBottomTextColor="@color/grey"/>
 
     <ru.russianmediagroup.rusrad.ui.custom.pickerview.LoopView
@@ -86,7 +86,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvAlarmTitle"
 
         app:lineColor="@color/transparent"
-        app:textSize="@dimen/text_size_loop"
+        app:textSize="@dimen/text_size_medium"
         app:topBottomTextColor="@color/grey"/>
 
 

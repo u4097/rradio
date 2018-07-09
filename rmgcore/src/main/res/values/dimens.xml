@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="view_pager_margin">50dp</dimen>
+    <dimen name="view_pager_page_margin">10dp</dimen>
+
+    <dimen name="size_icon_medium">24dp</dimen>
+
+</resources>

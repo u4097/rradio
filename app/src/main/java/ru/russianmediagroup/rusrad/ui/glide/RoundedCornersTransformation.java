@@ -8,6 +8,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.RectF;
 import android.graphics.Shader;
+import android.support.annotation.NonNull;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.Transformation;
@@ -20,6 +21,17 @@ import java.security.MessageDigest;
 
 
 public class RoundedCornersTransformation implements Transformation<Bitmap> {
+
+    @NonNull
+    @Override
+    public Resource<Bitmap> transform(@NonNull Context context, @NonNull Resource<Bitmap> resource, int outWidth, int outHeight) {
+        return null;
+    }
+
+    @Override
+    public void updateDiskCacheKey(@NonNull MessageDigest messageDigest) {
+
+    }
 
     public enum CornerType {
         ALL,
@@ -66,7 +78,7 @@ public class RoundedCornersTransformation implements Transformation<Bitmap> {
     }
 
 
-    @Override
+
     public Resource<Bitmap> transform(Resource<Bitmap> resource, int outWidth, int outHeight) {
         Bitmap source = resource.get();
 

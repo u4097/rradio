@@ -19,14 +19,12 @@ android {
     }
 
     signingConfigs {
-        release
-        debug
+        release {}
+        debug{}
     }
 
-    // flavorDimensions "api"
 
     buildTypes {
-
         release {
             shrinkResources true
             minifyEnabled true
@@ -35,23 +33,11 @@ android {
         }
 
         debug {
-            applicationIdSuffix ".debug"
+
             versionNameSuffix "-debug"
             signingConfig signingConfigs.debug
         }
     }
-
-//// productFlavors {
-////     minApi26 {
-////         dimension "api"
-////         minSdkVersion 26
-////     }
-////     minApi16 {
-////         dimension "api"
-////         minSdkVersion 16
-////     }
-//// }
-
 
     lintOptions {
         checkReleaseBuilds false
@@ -74,7 +60,7 @@ androidExtensions {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.aar'])
-    implementation project(":rmgcore")
+
 
     /* Android Support */
     implementation "com.android.support:appcompat-v7:$supportVersion"
@@ -88,8 +74,8 @@ dependencies {
 
     implementation "com.android.support.constraint:constraint-layout:$constraintVersion"
 
-    implementation "com.google.firebase:firebase-config:$playServicesVersion"
-    implementation "com.google.firebase:firebase-storage:$playServicesVersion"
+    implementation "com.google.firebase:firebase-config:$firebaseConfigVersion"
+    implementation "com.google.firebase:firebase-storage:$firebaseStorageVersion"
     implementation "com.google.android.gms:play-services-ads:$playServicesAdsVersion"
 
     /* Kotlin */
@@ -142,6 +128,9 @@ dependencies {
     /* Temporary */
     implementation 'com.github.curioustechizen.android-ago:library:1.4.0'
 
+    //==Glide==//
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
 }
 
 apply from: '../signing/signing.gradle'

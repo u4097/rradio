@@ -99,7 +99,7 @@
                 android:gravity="center"
                 android:text="@string/label_radio"
                 android:textColor="@color/color_selectable"
-                android:textSize="@dimen/text_size_tiny"
+                android:textSize="@dimen/text_size_xsmall"
                 tools:drawableTop="@drawable/ic_radio" />
 
             <TextView
@@ -111,7 +111,7 @@
                 android:gravity="center"
                 android:text="@string/label_wakeuper"
                 android:textColor="@color/color_selectable"
-                android:textSize="@dimen/text_size_tiny"
+                android:textSize="@dimen/text_size_xsmall"
                 tools:drawableTop="@drawable/ic_alarm" />
 
             <TextView
@@ -123,7 +123,7 @@
                 android:gravity="center"
                 android:text="@string/label_perks"
                 android:textColor="@color/color_selectable"
-                android:textSize="@dimen/text_size_tiny"
+                android:textSize="@dimen/text_size_xsmall"
                 tools:drawableTop="@drawable/ic_contest" />
 
             <TextView
@@ -135,7 +135,7 @@
                 android:gravity="center"
                 android:text="@string/label_watch"
                 android:textColor="@color/color_selectable"
-                android:textSize="@dimen/text_size_tiny"
+                android:textSize="@dimen/text_size_xsmall"
                 tools:drawableTop="@drawable/ic_watch" />
 
             <TextView
@@ -147,7 +147,7 @@
                 android:gravity="center"
                 android:text="@string/label_more"
                 android:textColor="@color/color_selectable"
-                android:textSize="@dimen/text_size_tiny"
+                android:textSize="@dimen/text_size_xsmall"
                 tools:drawableTop="@drawable/ic_more_grey" />
 
         </LinearLayout>

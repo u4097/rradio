@@ -48,7 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/spacing_medium"
         android:textColor="@color/color_selectable"
-        android:textSize="@dimen/text_size_tiny"
+        android:textSize="@dimen/text_size_xsmall"
 
         tools:text="Русское радиfs df sd fds fsdfsdо"
     />

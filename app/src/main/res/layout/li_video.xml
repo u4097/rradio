@@ -45,7 +45,7 @@
         android:ellipsize="end"
         android:lines="2"
         android:padding="@dimen/spacing_small"
-        android:textSize="@dimen/text_size_tiny"
+        android:textSize="@dimen/text_size_xsmall"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
